@@ -35,6 +35,7 @@ int main()
 {
     queue l;
     l.push(29);
+    
 
 
 return 0;

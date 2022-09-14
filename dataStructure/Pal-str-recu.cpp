@@ -15,9 +15,8 @@ int ispal(char arr[],int l,int r){
 int main()
 {
 
-char arr[6]="madam";
-
-cout<<ispal(arr,0,4);    //print 0 for not pal and 1 for pal
+char arr[7]="madamq";
+cout<<ispal(arr,0,7);    //print 0 for not pal and 1 for pal
 
 return 0;
 }

@@ -16,8 +16,6 @@ node* binarytree(node* root){
     int data;
     cout<<"Enter the data:"<<endl;
     cin>>data;
-    
-    
     root=new node(data);
     if(data==-1){
         return NULL;
@@ -28,13 +26,43 @@ node* binarytree(node* root){
   root->right=binarytree(root->right);
   return root;
 
+}
+void levelOrderTraversal(node* root){
+    queue<node*> q;
+    q.push(root);
+    q.push(NULL);
+    while (!q.empty())  
+    {
+        node* temp =q.front();
+        q.pop();
 
+        if(temp==NULL){
+            //purana level complete traverse ho chuka hai
+            cout<<endl;
+            if(!q.empty()){
+                //queue still has some child nodes
+                q.push(NULL);
+            }
+        }
+        else{
+            cout<<temp->data<<" ";
+            if(temp->left){
+                q.push(temp->left);
+            }
+            if(temp->right){
+                q.push(temp->right);
+            }
+        }
+    }
+    
 }
 int main()
 {
 node* root=NULL;
 //creating the tree;
 root= binarytree(root);
+//Level order traversal 
+levelOrderTraversal(root);
 
 return 0;
 }

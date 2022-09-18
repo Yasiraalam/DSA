@@ -1,2 +1,2 @@
-LL;
-        
+cout<<"data: ";
+        // cin>>data;

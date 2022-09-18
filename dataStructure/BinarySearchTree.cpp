@@ -79,7 +79,7 @@ int main()
 {
 
    node* root =NULL;
-   cout<<"Enter data for BST";
+   cout<<"Enter data for BST"<<endl;
    takeinput(root);
    cout<<"printing the tree"<<endl;
    levelOrderTraversal(root);

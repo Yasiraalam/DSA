@@ -20,9 +20,9 @@ node* binarytree(node* root){
     if(data==-1){
         return NULL;
     }
-  cout<<"Enter data for inserting in left of "<<data<<"  -1 for null"<<endl;
+  cout<<"Enter data for inserting in left of "<<data<<"OR (-1) for null"<<endl;
   root->left=binarytree(root->left);
-  cout<<"Enter data for inserting in right of "<<data<<"or -1 for null"<<endl;
+  cout<<"Enter data for inserting in right of "<<data<<"OR (-1) for null"<<endl;
   root->right=binarytree(root->right);
   return root;
 

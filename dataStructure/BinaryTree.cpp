@@ -27,6 +27,7 @@ node* binarytree(node* root){
   return root;
 
 }
+//level order traversal for printing the nodes of tree
 void levelOrderTraversal(node* root){
     queue<node*> q;
     q.push(root);

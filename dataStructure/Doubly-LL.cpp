@@ -26,6 +26,7 @@ void insertAthead(node* &head, int d){
      
 }
 
+
 void insertAttail(node* &tail, int d){
     node* temp= new node(d);
     node *trav=tail;

@@ -5,12 +5,12 @@ int tower (int i , char src, char helper , char dest)
 {
     if (i == 1)
     {  
-        cout <<"disk"<<i<<"form: " <<src<<"->"<<dest<<endl; 
+        cout <<"disk "<<i<<" from: " <<src<<"->"<<dest<<endl; 
     }
     else 
     {
         tower(i -1, src, helper, dest);
-       cout<<"disk" << i << "form: " << src<< "->"<<dest<<endl; 
+       cout<<"disk " << i << " from: " << src<< "->"<<dest<<endl; 
        tower(i-1, helper, src, dest);
     }
 
